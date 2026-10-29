@@ -1,0 +1,7 @@
+{
+  "files.encoding": "utf8bom",
+  "files.eol": "\r\n",
+  "files.associations": { "*.bsl": "bsl", "*.os": "bsl" },
+  "search.exclude": { "**/ConfigDumpInfo.xml": true },
+  "files.watcherExclude": { "retail_test/**": true }
+}

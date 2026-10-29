@@ -1,0 +1,8 @@
+.DS_Store
+*.cf
+*.cfe
+*.dt
+*.log
+build/
+.ib/
+__pycache__/
