@@ -585,7 +585,7 @@ STRATEGY_NOTE = {
 }
 
 
-def write_claude_md(proj, base, db, v8, v8ver, cred_path):
+def write_rules_md(proj, base, db, v8, v8ver, cred_path):
     if db["strategy"] == "v77":
         values = {"BASE_NAME": base["name"], "BASE_DIR": db["path"],
                   "SRC_STATE": "разобраны GComp в `src/`" if (proj / "src").is_dir() else
@@ -801,7 +801,7 @@ def cmd_init(a):
         info = config_info(proj / "config")
         ok("CLAUDE.md уже есть — не трогаю (удалите его, чтобы создать заново)")
     else:
-        info, closed = write_claude_md(proj, base, db, v8, v8ver, cred_path)
+        info, closed = write_rules_md(proj, base, db, v8, v8ver, cred_path)
         details = [info["title"]] + ([info["version"]] if info["version"] != "—" else [])
         if info.get("compat"):
             details.append(f"совместимость {info['compat']}")
